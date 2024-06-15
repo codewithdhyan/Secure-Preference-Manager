@@ -8,7 +8,7 @@ To use the Secure Preference Manager, initialize it with the context, encryption
 
 ```kotlin
 // Initialize the Secure Preference Manager
-val securePreferenceManager = SecurePreferenceManager(this, "encryptionKey", "initializationVector", 16)
+val securePreferenceManager = SecurePreferenceManager(this, "encryptionKey", "salt", 16)
 
 // Store a value securely
 securePreferenceManager.putString("key", "value")
